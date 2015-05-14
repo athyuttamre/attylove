@@ -30,7 +30,7 @@ spark.on("login", function(err, body) {
             overlayText.addClass("success");
             overlayText.text("Connected!");
 
-            $("#overlay").fadeOut();
+            $(".overlay").fadeOut();
           }
         });
       }
@@ -52,10 +52,11 @@ function sendLove() {
       console.error(err);
       loveStatus.addClass("failure");
       loveStatus.text("Error sending love. Please try again.");
-      loveButton[0].disabled = false;
     } else {
       loveStatus.addClass("success");
       loveStatus.text("Love received! You're such a nice person.");
     }
+
+    loveButton[0].disabled = false;
   });
 }
