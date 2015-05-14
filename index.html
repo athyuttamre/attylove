@@ -10,6 +10,7 @@
   
   <!-- CSS -->
   <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/hover-min.css">
   <link rel="stylesheet" href="css/main.css">
 
   <!-- Spark SDK -->
@@ -18,7 +19,17 @@
 </head>
 
 <body>
-  <button id="send-love" onclick="sendLove()" disabled>Send Atty Love</button>
+  <div class="overlay">
+    <p id="overlay-message">
+      Connecting to Atty's Spark...
+    </p>
+  </div>
+  <div class="content container">
+    <h1>#AttyLove</h1>
+    <p>Send some love to Atty's desk!</p>
+    <button id="send-love" class="hvr-float-shadow" onclick="sendLove()"></button>
+    <p id="love-status"></p>
+  </div>
 
   <!-- JavaScript -->
   <script src="js/jquery-2.1.4.min.js"></script>
