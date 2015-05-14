@@ -44,6 +44,8 @@ h1 {
   border: 0;
   cursor: pointer;
   outline: 0;
+
+  transition: 0.2s;
 }
 
 #send-love[disabled] {

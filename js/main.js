@@ -30,7 +30,7 @@ spark.on("login", function(err, body) {
             overlayText.addClass("success");
             overlayText.text("Connected!");
 
-            $(".overlay").fadeOut();
+            $(".overlay").fadeOut(2000);
           }
         });
       }
